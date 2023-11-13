@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+
+    .nav-container {
+        width: 100%;
+        margin: 0 auto;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+
+            li {
+                margin: 0 20px;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    &:hover {
+                        /* Agregar efecto hover */
+                        color: #007BFF; 
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vb;
+    h1 {
+        font-size: 100pxpx; // Cambia el tamaño de la letra
+        color: #007BFF; // Cambia el color del texto
+        margin: 0; // Elimina el margen superior e inferior
+        
+    }
+
+    p {
+        color: #fec859; // Cambia el color del texto del párrafo
+        margin-top: 5 px;
+    }
+
+    img {
+        width: 100px; // Cambia el ancho de la imagen
+        height: auto; // Mantiene la proporción original de la imagen
+        margin-left: 20px; // Agrega margen a la izquierda de la imagen para separarla del texto
+        border-radius: 40%;
+    }
+    
+}
+
+.color-changing-text {
+    
+    transition: color 0.5s; // Establece una transición suave de 0.5 segundos para el color
+
+    @keyframes changeColor {
+        0% {
+            color: #ff99ff; // Color inicial
+        
+        }
+        25% {
+            color: #b779ff ; // Color a la mitad de la animación
+        }
+        50% {
+            color: #5353f2; // Color a la mitad de la animación
+        }
+        75% {
+            color: #083dc4; // Color a la mitad de la animación
+        }
+        100% {
+            color: #ff99ff; // Color final
+        }
+    }
+
+    animation: changeColor 4s infinite; // Inicia la animación y repítela infinitamente
+}
+
+/* Agrega estilos adicionales según tus necesidades */

@@ -1,0 +1,18 @@
+.about-me-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vb;
+    h1 {
+        font-size: 36px; // Cambia el tamaño de la letra
+        color: #007BFF; // Cambia el color del texto
+        margin: 0; // Elimina el margen superior e inferior
+        
+    }
+
+    p {
+        color: #fec859; // Cambia el color del texto del párrafo
+        margin-top: 5 px;
+    }
+}
